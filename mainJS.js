@@ -12,4 +12,4 @@ function counter(){
 		return (count);
 	}
 	
-	alert(counter(text));
+	alert("Количество фрагментов в вашем тексте " + counter(text) + ". Разделителем был выбран символ '" + sep + "'.");
