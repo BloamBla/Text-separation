@@ -1,15 +1,9 @@
-const text = prompt("Введите текст.");
-const sep = prompt("Введите сепаратор.");
+var myText = prompt("Введите текст.");
+var separator = prompt("Введите сепаратор.");
 
-function counter(){
-    let count = 0;
-    let arr = text.split(sep);
-		for (let i = 0; i < arr.length; i++){
-			if (arr[i] !== "") {
-				count += 1
-			}
-		}
-		return (count);
-	}
-	
-	alert("Количество фрагментов в вашем тексте " + counter(text) + ". Разделителем был выбран символ '" + sep + "'.");
+function splitter(txt, sep){
+    return txt.split(sep).length;
+}
+
+alert("Количество фрагментов в вашем тексте " + splitter(myText, separator) + ".\n"
+    + "Разделителем был выбран символ '" + separator + "'.");
